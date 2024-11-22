@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Calculator | Empowering the Nation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/the nation logo.png" alt="Empowering the Nation Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="six-month-courses.html">Six-Month Courses</a></li>
+                <li><a href="six-week-courses.html">Six-Week Courses</a></li>
+                <li><a href="fee-calculator.html">Fee Calculator</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Calculate Your Fees</h2>
+            <form id="feeForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <h3>Select Courses:</h3>
+                <input type="checkbox" id="firstAid" name="courses" value="1500">
+                <label for="firstAid">First Aid - R1500</label><br>
+
+                <input type="checkbox" id="sewing" name="courses" value="1800">
+                <label for="sewing">Sewing - R1800</label><br>
+
+                <input type="checkbox" id="landscaping" name="courses" value="2200">
+                <label for="landscaping">Landscaping - R2200</label><br>
+
+                <input type="checkbox" id="lifeSkills" name="courses" value="1600">
+                <label for="lifeSkills">Life Skills - R1600</label><br>
+
+                <br><br>
+                <input type="submit" value="Calculate Total">
+            </form>
+
+            <div id="totalFee">
+                <!-- Total fee will be displayed here after calculation -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: (012) 345 6789 | info@empoweringthenation.co.za</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
